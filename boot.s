@@ -1,8 +1,8 @@
-# set magic number to 0x1BADB002 to identified by bootloader 
-.set MAGIC,    0x1BADB002
-
 # set flags to 0
 .set FLAGS,    0
+
+# set magic number to 0x1BADB002 to identified by bootloader 
+.set MAGIC,    0x1BADB002
 
 # set the checksum
 .set CHECKSUM, -(MAGIC + FLAGS)
@@ -49,6 +49,7 @@ hltLoop:
 	jmp hltLoop
 
 .size _start, . - _start
+
 
 
 
