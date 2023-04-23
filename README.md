@@ -1,5 +1,7 @@
 # Kernel
 
+Writing a kernel from scratch is to print something on screen. Using a VGA(Visual Graphics Array), a hardware system that controls the display. We will use GNU GRUB to load our kernel because it supports a multiboot of many operating systems.
+
 ## Requirements
 * GNU/Linux
 * Assembler - I am using GNU Assembler(gas) to instruct the bootloader for loading the starting point of our kernel.
